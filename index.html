@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIM CORPORATION — Construimos Confianza</title>
+  <meta name="description" content="UIM Corporation - Unión, Innovación y Maestría. Construcción residencial, comercial y remodelaciones en Caracas, Venezuela.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/png" href="assets/Avatar-Redes.png">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo" aria-label="UIM Corporation Inicio">
+      <img src="assets/Blanco.png" alt="UIM Corporation" class="nav-logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active" data-section="hero">Inicio</a></li>
+      <li><a href="#nosotros" class="nav-link" data-section="nosotros">Nosotros</a></li>
+      <li><a href="#servicios" class="nav-link" data-section="servicios">Servicios</a></li>
+      <li><a href="#proyectos" class="nav-link" data-section="proyectos">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="nav-cta">Solicitar Presupuesto</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menú de navegación" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-link">Inicio</a></li>
+      <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+      <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+      <li><a href="#proyectos" class="mobile-link">Proyectos</a></li>
+      <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+      <li><a href="#contacto" class="mobile-link cta">Solicitar Presupuesto</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO — SCROLL-DRIVEN BUILD ===================== -->
+  <section class="hero-scroll-stage" id="hero">
+    <div class="hero-stage-pinned">
+      <!-- Video background for scroll scrubbing -->
+      <div class="hero-video-container">
+        <video id="heroVideo" muted playsinline preload="auto" poster="assets/hero-poster.jpg">
+          <source src="assets/hero-construction.mp4" type="video/mp4">
+        </video>
+        <!-- Fallback gradient if no video -->
+        <div class="hero-fallback"></div>
+      </div>
+
+      <!-- Phase overlay content — alternates left/right -->
+      <div class="phase-content phase-1 active" data-phase="1">
+        <div class="phase-text phase-left">
+          <h1 class="phase-headline"><em>Construimos</em> confianza</h1>
+          <p class="phase-body">Un terreno vacío. Una visión sólida. Aquí nace el futuro que tu proyecto merece.</p>
+          <a href="#nosotros" class="phase-cta-btn">Comenzar el recorrido</a>
+          <div class="scroll-cue">
+            <span>Desliza para construir</span>
+            <div class="scroll-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase-content phase-2" data-phase="2">
+        <div class="phase-text phase-right">
+          <h2 class="phase-headline">Bases que <em>sostienen</em></h2>
+          <p class="phase-body">Cada cimiento se calcula con precisión. Cada varilla resiste la carga para que cada futuro piso descanse seguro.</p>
+        </div>
+      </div>
+
+      <div class="phase-content phase-3" data-phase="3">
+        <div class="phase-text phase-left">
+          <h2 class="phase-headline">Piso a <em>piso</em></h2>
+          <p class="phase-body">La estructura de acero se eleva, nivel a nivel, alcanzando el horizonte con solidez y determinación.</p>
+        </div>
+      </div>
+
+      <div class="phase-content phase-4" data-phase="4">
+        <div class="phase-text phase-right">
+          <h2 class="phase-headline">Una piel de <em>cristal</em></h2>
+          <p class="phase-body">El vidrio se encuentra con el cielo, llevando la luz natural al interior y creando una silueta que inspira confianza.</p>
+        </div>
+      </div>
+
+      <div class="phase-content phase-5" data-phase="5">
+        <div class="phase-text phase-left">
+          <h2 class="phase-headline">Forma, <em>terminada</em></h2>
+          <p class="phase-body">Estructura, paisajismo y luz exterior se integran en el terreno. Una composición auténtica y sólida.</p>
+        </div>
+      </div>
+
+      <div class="phase-content phase-6" data-phase="6">
+        <div class="phase-text phase-right">
+          <h2 class="phase-headline">Diseñado por <em>dentro</em></h2>
+          <p class="phase-body">Los volúmenes vacíos se convierten en espacios habitables — madera cálida, piedra pulida y horizontes panorámicos.</p>
+        </div>
+      </div>
+
+      <div class="phase-content phase-7" data-phase="7">
+        <div class="phase-text phase-center">
+          <h2 class="phase-headline">Un proyecto, <em>entregado</em></h2>
+          <p class="phase-body">Del terreno vacío a una dirección completamente realizada. Esto es UIM Corporation — tu proyecto, en manos seguras.</p>
+          <div class="phase-dual-cta">
+            <a href="#contacto" class="phase-cta-btn primary">Solicitar Presupuesto</a>
+            <button class="phase-cta-btn secondary" id="replayBtn">Repetir la construcción</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- HUD Overlay -->
+      <div class="hud-overlay">
+        <div class="hud-phase">
+          <span class="hud-label" id="hudLabel">FASE 1 : INICIO</span>
+        </div>
+        <div class="hud-progress">
+          <span class="hud-percent" id="hudPercent">0%</span>
+          <span class="hud-complete">COMPLETADO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOSOTROS ===================== -->
+  <section class="section section-light" id="nosotros">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-text animate-on-scroll">
+          <span class="section-label">Quiénes somos</span>
+          <h2 class="section-title">Unión, Innovación <br>y <em>Maestría</em></h2>
+          <p class="section-body">Construimos con solidez, claridad y compromiso. Cada proyecto es una oportunidad para crear espacios seguros, funcionales y duraderos.</p>
+          <p class="section-body">Somos más que una constructora. Somos un equipo de profesionales comprometidos con la calidad, la innovación y la entrega puntual de cada obra.</p>
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4>Compromiso</h4>
+              <p>Seguridad, plazos y confianza del cliente.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h4>Calidad</h4>
+              <p>Estándares arquitectónicos y estructurales superiores.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              </div>
+              <h4>Innovación</h4>
+              <p>Metodologías modernas, diseño de vanguardia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="split-image animate-on-scroll">
+          <div class="image-reveal">
+            <img src="assets/about-building.jpg" alt="Proyecto UIM Corporation" loading="lazy">
+            <div class="image-overlay-accent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ESTADÍSTICAS ===================== -->
+  <section class="section section-stats" id="stats">
+    <div class="stats-bg-overlay"></div>
+    <div class="container stats-container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="150">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Proyectos completados</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="200">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Clientes satisfechos</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="50">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Profesionales en equipo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICIOS ===================== -->
+  <section class="section section-dark" id="servicios">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Nuestros servicios</span>
+        <h2 class="section-title">Experiencia y calidad que tu<br>proyecto <em>merece</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/><path d="M9 10h1"/><path d="M14 10h1"/><path d="M9 14h1"/><path d="M14 14h1"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Construcción Residencial</h3>
+          <p class="service-desc">Hogares que inspiran seguridad y confort. Diseñamos y construimos viviendas con los más altos estándares de calidad.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M3 21h18"/><path d="M9 8h1"/><path d="M14 8h1"/><path d="M9 12h1"/><path d="M14 12h1"/><path d="M9 16h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Construcción Comercial</h3>
+          <p class="service-desc">Espacios comerciales que potencian tu negocio. Proyectos a medida con funcionalidad y diseño de vanguardia.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Remodelaciones</h3>
+          <p class="service-desc">Transformamos espacios con precisión y estilo. Renovaciones que añaden valor y funcionalidad a tu propiedad.</p>
+          <div class="service-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROYECTOS — Horizontal Gallery ===================== -->
+  <section class="section section-projects" id="proyectos">
+    <div class="projects-header animate-on-scroll">
+      <span class="section-label">Portafolio</span>
+      <h2 class="section-title">Proyectos que hablan<br>por <em>nosotros</em></h2>
+    </div>
+    <div class="projects-horizontal-track" id="projectsTrack">
+      <div class="projects-slider">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-1.jpg" alt="Residencias El Bosque" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-type">Residencial</span>
+              <h3 class="project-name">Residencias El Bosque</h3>
+              <p class="project-location">Caracas, Venezuela</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-2.jpg" alt="Torre Comercial Altamira" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-type">Comercial</span>
+              <h3 class="project-name">Torre Comercial Altamira</h3>
+              <p class="project-location">Chacao, Caracas</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-3.jpg" alt="Villa La Castellana" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-type">Remodelación</span>
+              <h3 class="project-name">Villa La Castellana</h3>
+              <p class="project-location">La Castellana, Caracas</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-4.jpg" alt="Centro Empresarial UIM" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-type">Comercial</span>
+              <h3 class="project-name">Centro Empresarial UIM</h3>
+              <p class="project-location">Las Mercedes, Caracas</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-5.jpg" alt="Conjunto Residencial Oasis" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-type">Residencial</span>
+              <h3 class="project-name">Conjunto Residencial Oasis</h3>
+              <p class="project-location">El Hatillo, Caracas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESO ===================== -->
+  <section class="section section-light" id="proceso">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Cómo trabajamos</span>
+        <h2 class="section-title">Nuestro <em>proceso</em></h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step" data-step="1">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Consultoría</h3>
+            <p>Escuchamos tu visión, evaluamos el terreno y definimos juntos los objetivos del proyecto.</p>
+          </div>
+        </div>
+        <div class="process-step" data-step="2">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Diseño</h3>
+            <p>Creamos planos arquitectónicos y estructurales que combinan funcionalidad, estética y normativa.</p>
+          </div>
+        </div>
+        <div class="process-step" data-step="3">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Construcción</h3>
+            <p>Ejecutamos con precisión, cumpliendo plazos y estándares de seguridad en cada fase de la obra.</p>
+          </div>
+        </div>
+        <div class="process-step" data-step="4">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Entrega</h3>
+            <p>Tu proyecto terminado, listo para habitar. Con garantía y la satisfacción de un trabajo impecable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIOS ===================== -->
+  <section class="section section-dark" id="testimonios">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Testimonios</span>
+        <h2 class="section-title">Lo que dicen nuestros <em>clientes</em></h2>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-card active">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">UIM Corporation transformó nuestra visión en realidad. La calidad de la construcción y el cumplimiento de los plazos superó nuestras expectativas.</p>
+          <div class="testimonial-author">
+            <span class="author-name">Carlos Mendoza</span>
+            <span class="author-project">Residencias El Bosque</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Profesionalismo y compromiso en cada detalle. Desde la primera reunión hasta la entrega, el equipo demostró maestría y dedicación.</p>
+          <div class="testimonial-author">
+            <span class="author-name">María González</span>
+            <span class="author-project">Remodelación Residencial</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Encontrar una constructora confiable no fue fácil hasta que conocimos a UIM. Su innovación en métodos constructivos marca la diferencia.</p>
+          <div class="testimonial-author">
+            <span class="author-name">Roberto Pérez</span>
+            <span class="author-project">Torre Comercial Altamira</span>
+          </div>
+        </div>
+        <div class="testimonials-nav">
+          <button class="test-nav-btn" id="prevTest" aria-label="Anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="test-dots" id="testDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="test-nav-btn" id="nextTest" aria-label="Siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="section section-contact" id="contacto">
+    <div class="contact-bg-overlay"></div>
+    <div class="container contact-container">
+      <div class="contact-split">
+        <div class="contact-info animate-on-scroll">
+          <span class="section-label">Contacto</span>
+          <h2 class="section-title">¿Listo para construir<br>tu próximo <em>proyecto</em>?</h2>
+          <p class="section-body">Contáctanos y transformemos tu visión en realidad. Tu proyecto, en manos seguras.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <a href="tel:+582123086626" class="contact-link">+58 212-308 6626</a>
+                <a href="tel:+584123076626" class="contact-link">+58 412-307 6626</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:corporacionuim@gmail.com" class="contact-link">corporacionuim@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Chacao, Caracas, Venezuela</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a href="https://instagram.com/uimcorporation" target="_blank" rel="noopener" class="contact-link">@uimcorporation</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap animate-on-scroll">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="form-group">
+              <select id="service" name="service">
+                <option value="" disabled selected>Tipo de proyecto</option>
+                <option value="residencial">Construcción Residencial</option>
+                <option value="comercial">Construcción Comercial</option>
+                <option value="remodelacion">Remodelación</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Cuéntanos sobre tu proyecto..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="formSubmitBtn">Enviar mensaje</button>
+            <div class="form-feedback" id="formFeedback" role="alert" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" aria-label="UIM Corporation Inicio" class="footer-logo-link">
+            <img src="assets/Blanco.png" alt="UIM Corporation" class="footer-logo">
+          </a>
+          <p class="footer-tagline">Unión, Innovación y Maestría.<br>Construimos confianza.</p>
+          <span class="footer-rif">RIF: J-412427890</span>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <a href="#hero">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="#servicios">Construcción Residencial</a>
+          <a href="#servicios">Construcción Comercial</a>
+          <a href="#servicios">Remodelaciones</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contacto</h4>
+          <a href="mailto:corporacionuim@gmail.com">corporacionuim@gmail.com</a>
+          <a href="tel:+582123086626">+58 212-308 6626</a>
+          <a href="tel:+584123076626">+58 412-307 6626</a>
+          <a href="https://instagram.com/uimcorporation" target="_blank" rel="noopener">@uimcorporation</a>
+          <span>Chacao, Caracas, Venezuela</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 UIM Corporation. Todos los derechos reservados.</span>
+        <span>Diseñamos espacios, construimos confianza.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger + ScrollToPlugin CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
