@@ -1059,6 +1059,22 @@ input, textarea, select { font-family: var(--font-body); }
   font-size: 0.8rem;
   color: rgba(255,255,255,0.3);
 }
+.footer-developer {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.5;
+}
+.developer-link {
+  color: var(--color-primary-orange);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+.developer-link:hover {
+  color: #ff9142;
+  text-decoration: underline;
+}
 
 /* ============================================================
    RESPONSIVE
