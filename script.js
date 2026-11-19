@@ -77,14 +77,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // Preload video directly into in-memory Blob for instant seeking without network lag
   if (heroVideo) {
     heroVideo.pause();
+
+    const primeFirstFrame = () => {
+      if (heroVideo.currentTime === 0) {
+        heroVideo.currentTime = 0.001;
+      }
+    };
+    heroVideo.addEventListener('loadeddata', primeFirstFrame, { once: true });
+    if (heroVideo.readyState >= 2) primeFirstFrame();
+
     fetch('assets/hero-construction.mp4')
       .then(res => {
         if (!res.ok) throw new Error('Network error');
         return res.blob();
       })
       .then(blob => {
+        const currentTime = heroVideo.currentTime || 0.001;
         const blobUrl = URL.createObjectURL(blob);
         heroVideo.src = blobUrl;
+        heroVideo.addEventListener('loadedmetadata', () => {
+          heroVideo.currentTime = currentTime;
+        }, { once: true });
         heroVideo.load();
       })
       .catch(() => {
